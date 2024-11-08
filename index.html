@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business and Projects Ltd</title>
+    <link rel="stylesheet" href="your-styles.css">
     <style>
         /* Reset and base styles */
         * {
@@ -131,6 +132,14 @@
                 font-size: 2rem;
             }
         }
+                .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
@@ -225,12 +234,12 @@
 
         <section id="contact">
             <h2>Contact Me</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="4" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+        <form class="contact-form" id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
         </section>
     </main>
 
